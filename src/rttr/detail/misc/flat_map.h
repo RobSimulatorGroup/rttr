@@ -36,7 +36,11 @@
 #include <utility>
 #include <functional>
 #include <algorithm>
+#if __cplusplus >= 202002L
+#include <version> // _LIBCPP_VERSION
+#else
 #include <ciso646> // _LIBCPP_VERSION
+#endif
 
 namespace rttr
 {
